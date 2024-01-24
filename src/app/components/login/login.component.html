@@ -1,0 +1,15 @@
+<app-header></app-header>
+<main>
+    <form class="formLogin" (ngSubmit)="submit()" [formGroup]="loginForm">
+        <h1>LOGIN</h1>
+        <input type="email" placeholder="email" class="formLoginInputs" formControlName="email">
+        <!-- <div *ngIf="loginForm.formControl?errors">precisa ser email</div> -->
+        <input type="password" placeholder="password" class="formLoginInputs"  formControlName="password">
+        <select class="formLoginInputs" formControlName="role" placeholder="ROLE">
+            <option value="chef">Chef</option>
+            <option value="waiter">Waiter</option>
+            <option value="admin">Admin</option>
+        </select>
+        <button type="submit">Logar</button>
+    </form>
+</main>

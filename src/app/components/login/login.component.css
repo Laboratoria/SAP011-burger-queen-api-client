@@ -1,0 +1,29 @@
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.formLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: #F2B6C6;
+    width: 60%;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.formLoginInputs {
+    padding: 0.8em 0;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    text-align:center;
+}
+.formLoginInputs:focus{
+    outline: none;
+}
+h1 {
+    color: #fff;
+}
